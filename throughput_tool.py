@@ -50,9 +50,10 @@ def print_frame(frame: bytes, name: str):
     print("Raw Bytes :", frame)
     print("Hex       :", frame.hex().upper())
     print("Length    :", len(frame))
+    
 
 if __name__ == "__main__":
-    print("Starting Analyzer...")
+    print("Starting Analyzer....")
     # run_throughput_test()
     start_frame = build_start_frame()
     stop_frame = build_stop_frame()
